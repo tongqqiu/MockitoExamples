@@ -37,11 +37,17 @@ ehthumbs.db
 Thumbs.db
 
 
-#
-#######################
-.svn
-.idea
-.iml
-workspace.xml
-tasks.xml
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Maven
+log/
+target/
 
