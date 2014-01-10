@@ -1,3 +1,5 @@
+package org.tongqing.test;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -39,4 +41,5 @@ public class TestExample {
         boolean isValid = objectUnderTest.validate();
         assertTrue( isValid );
     }
+
 }
