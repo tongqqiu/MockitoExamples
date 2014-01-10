@@ -41,3 +41,7 @@ Thumbs.db
 #######################
 .svn
 .idea
+.iml
+workspace.xml
+tasks.xml
+
