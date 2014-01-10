@@ -4,7 +4,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Created by tongqingqiu on 1/10/14.
+ * Test Strategy
+ *
+ * @author Tongqing Qiu
  */
 public class StrategyTest {
 

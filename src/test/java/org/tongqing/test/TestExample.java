@@ -5,14 +5,12 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.tongqing.test.Something;
-import org.tongqing.test.Strategy;
-
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 /**
+ * Example of using mockito
  * User: TQiu
  * Date: 1/7/14
  */
@@ -22,11 +20,10 @@ public class TestExample {
     @Mock
     Strategy strategy;
 
-    Something objectUnderTest;
+    Something objectUnderTest = new Something(strategy);
 
     @Before
     public void setUp() {
-        objectUnderTest = new Something(strategy);
     }
 
     @Test
