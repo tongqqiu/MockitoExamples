@@ -1,5 +1,6 @@
 package org.tongqing.test.db;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -40,7 +41,7 @@ public class SampleServiceTest {
 
         Mockito.verify(sampleDao).findByPrimaryKey(id);
 
-        Assert.assertFalse(result);
+        Assert.assertFalse("not exist if EntityNotFoundException found in DAO level", result);
     }
 
     @Test
@@ -55,5 +56,12 @@ public class SampleServiceTest {
         Mockito.verify(sampleDao).findByPrimaryKey(id);
 
         Assert.assertTrue(result);
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        if(sampleDao != null) {
+            Mockito.reset(sampleDao);
+        }
     }
 }

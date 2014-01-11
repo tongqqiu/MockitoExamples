@@ -5,4 +5,6 @@ package org.tongqing.test.db;
  */
 public interface SampleDao   {
    Sample findByPrimaryKey(Long id);
+
+    void update(Sample sample);
 }
