@@ -1,4 +1,4 @@
-package org.tongqing.test;
+package org.tongqing.test.strategy;
 
 /**
  * User: TQiu

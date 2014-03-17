@@ -2,6 +2,8 @@ package org.tongqing.test;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.tongqing.test.strategy.IStrategy;
+import org.tongqing.test.strategy.Strategy;
 
 /**
  * Test Strategy
