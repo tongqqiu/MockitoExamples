@@ -21,7 +21,6 @@ public class StrategyTest {
     @Test
     public void testDoSomethingConcrete() throws Exception {
         strategy.doSomethingConcrete();
-
     }
 
     @Test
